@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b4a">
+<title>Baby Ruru | Nesting Checklist</title>
+<style>
+:root{--purple:#142b4a;--purple2:#244b78;--lilac:#e8f0fa;--ink:#17283d;--muted:#68788e;--cream:#f8fbff;--line:#d9e4f1;--green:#24865a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#eaf1fa 0,#f8fbff 360px);color:var(--ink);font-family:ui-rounded,"SF Pro Rounded",system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:980px;margin:auto;padding:22px 16px 60px}.hero{position:relative;overflow:hidden;border-radius:28px;padding:28px 24px;background:linear-gradient(130deg,#10243f,#183b63 65%,#416b9b);color:white;box-shadow:0 14px 34px #142b4a26}.hero:after{content:"🧸";position:absolute;right:20px;top:18px;font-size:clamp(66px,14vw,112px);opacity:.24;transform:rotate(9deg);filter:drop-shadow(0 8px 8px #07172b55);animation:bearFloat 3.8s ease-in-out infinite}@keyframes bearFloat{0%,100%{transform:translateY(0) rotate(9deg)}50%{transform:translateY(-9px) rotate(3deg)}}
+@keyframes countdownPop{0%{transform:scale(.92);opacity:.55}55%{transform:scale(1.07)}100%{transform:scale(1);opacity:1}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1.12)}}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;opacity:.9}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,8vw,60px);line-height:1;margin:12px 0 8px}.hero p{margin:0;max-width:540px;line-height:1.55;color:#f8edff}.tag{display:inline-block;margin-top:18px;padding:7px 12px;border:1px solid #ffffff80;border-radius:99px;font-size:12px;font-weight:700}
+.parents{margin-top:13px;font-size:13px;font-weight:800;letter-spacing:.03em;color:#e5efff}.parents span{padding:0 7px;color:#b9d2f2}.pregnancy{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff 0%,#f3f7fc 100%);border:1px solid var(--line);border-radius:20px;padding:17px;margin:16px 0}.pregnancy:after{content:"✦  ·  ✧";position:absolute;right:15px;bottom:10px;color:#9bb5d4;font-size:18px;letter-spacing:8px;animation:twinkle 2.4s ease-in-out infinite;pointer-events:none}.preg-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.preg-kicker{font-size:11px;letter-spacing:.13em;font-weight:900;color:var(--muted)}.preg-age{font-family:Georgia,serif;font-size:30px;font-weight:700;color:var(--purple);margin:7px 0}.preg-age.bump{animation:countdownPop .55s ease-out}.countdown-box{background:linear-gradient(135deg,#142b4a,#244b78)!important;color:#fff!important;box-shadow:0 7px 18px #142b4a20}.countdown-box small,.countdown-box strong{color:#fff!important}.countdown-box strong{display:inline-block;animation:countdownPop .7s ease-out}.preg-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.preg-meta div{background:#f3f7fc;border-radius:13px;padding:11px}.preg-meta small{display:block;font-size:10px;color:var(--muted);font-weight:800;margin-bottom:4px}.preg-meta strong{font-size:14px;color:var(--ink)}.preg-track{height:9px;background:#e6edf6;border-radius:99px;overflow:hidden;margin-top:13px}.preg-fill{height:100%;background:linear-gradient(90deg,#142b4a,#6d94c2);border-radius:99px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}.stat strong{display:block;font-size:24px;color:var(--purple)}.stat span{font-size:11px;color:var(--muted);font-weight:700}
+.progress-card,.toolbar,.budget{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin:14px 0}.progress-head{display:flex;justify-content:space-between;gap:12px;font-weight:800;font-size:13px;margin-bottom:10px}.track{height:10px;background:#e6edf6;border-radius:99px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#142b4a,#6d94c2);border-radius:99px;transition:width .2s}
+.toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.toolbar input,.toolbar select,.budget input,.add-row input{min-width:0;border:1px solid var(--line);border-radius:12px;padding:11px 12px;font:inherit;color:var(--ink);background:#fff}.toolbar input{flex:1}.toolbar select{max-width:180px}.filters{display:flex;gap:7px;flex-wrap:wrap}.btn{border:0;border-radius:12px;background:var(--lilac);color:#244b78;padding:10px 13px;font-weight:800;cursor:pointer}.btn.active{background:var(--purple);color:#fff}.btn.primary{background:var(--purple);color:white}
+.budget{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:end}.budget label{display:block;font-size:11px;color:var(--muted);font-weight:800;margin-bottom:6px}.budget input{width:100%}.budget strong{display:block;color:var(--purple);font-size:20px;padding:9px 0}
+.section{background:#fff;border:1px solid var(--line);border-radius:20px;margin:14px 0;overflow:hidden}.section-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:#f3f7fc;border-bottom:1px solid var(--line)}.section-head h2{font-size:16px;margin:0}.section-head small{color:var(--muted);font-weight:700}.items{padding:4px 16px}.item{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:start;padding:12px 2px;border-bottom:1px solid #f3edf7}.item-fields{display:grid;grid-template-columns:minmax(90px,120px) minmax(0,1fr);gap:7px;margin-top:7px}.item-fields input{min-width:0;width:100%;border:1px solid #e4ebf4;border-radius:9px;padding:8px;font:inherit;font-size:12px}.item-fields .price{text-align:right}.ref-link{display:inline-flex;margin-top:6px;font-size:11px;font-weight:800;color:#244b78;text-decoration:none;background:#e8f0fa;border-radius:8px;padding:6px 9px}.ref-link:hover{text-decoration:underline}.item:last-child{border:0}.item input[type=checkbox]{width:19px;height:19px;accent-color:var(--purple)}.item-name{font-size:14px}.item.done .item-name{text-decoration:line-through;color:#9b91a2}.price{width:100%;border:1px solid #e4ebf4;border-radius:9px;padding:7px;font:inherit;font-size:12px;text-align:right}.item small{display:block;color:var(--muted);font-size:10px}.add-row{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--line)}.add-row input{flex:1}.empty{text-align:center;color:var(--muted);padding:26px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 8px}
+@media(max-width:600px){.wrap{padding:14px 12px 40px}.hero{padding:24px 20px}.stats{gap:7px}.stat{padding:11px 5px}.stat strong{font-size:21px}.budget{grid-template-columns:1fr 1fr}.budget>div:last-child{grid-column:1/-1}.toolbar select{flex:1;max-width:none}.item{grid-template-columns:22px minmax(0,1fr)}.item-fields{grid-template-columns:100px minmax(0,1fr)}.section-head{padding:14px}.items{padding:4px 12px}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+ <div class="eyebrow">A little checklist for a big new chapter 🧸</div>
+ <h1>Baby Ruru</h1>
+ <p>Our nesting checklist — one tiny step at a time. Check off what’s ready, add what’s missing, save product links for reference, and keep track of your budget.</p>
+ <span class="tag">♡ made with love for our little bear ♡</span>
+ <div class="parents">Mommy Rox <span>♡</span> Daddy Ivan</div>
+</header>
+<section class="pregnancy" aria-label="Pregnancy timeline">
+ <div class="preg-top">
+  <div>
+   <div class="preg-kicker">OUR PREGNANCY JOURNEY</div>
+   <div class="preg-age" id="pregAge">Calculating…</div>
+   <div style="font-size:12px;color:var(--muted)">Every day brings us closer to meeting you, Baby Ruru ♡</div>
+  </div>
+  <div style="font-size:48px;filter:drop-shadow(0 5px 7px #142b4a20);animation:bearFloat 3.2s ease-in-out infinite" aria-hidden="true">🧸</div>
+ </div>
+ <div class="preg-track"><div class="preg-fill" id="pregProgress" style="width:0%"></div></div>
+ <div class="preg-meta">
+  <div><small>ESTIMATED DUE DATE</small><strong id="eddLabel">January 10, 2027</strong></div>
+  <div class="countdown-box"><small>COUNTDOWN TO BABY RURU</small><strong id="countdown">—</strong></div>
+ </div>
+</section>
+<div class="stats">
+ <div class="stat"><strong id="totalCount">0</strong><span>TOTAL ITEMS</span></div>
+ <div class="stat"><strong id="doneCount">0</strong><span>READY</span></div>
+ <div class="stat"><strong id="leftCount">0</strong><span>TO PREPARE</span></div>
+</div>
+<div class="progress-card"><div class="progress-head"><span>Your nesting progress</span><span id="percent">0%</span></div><div class="track"><div class="fill" id="progress"></div></div></div>
+<div class="toolbar">
+ <input id="search" type="search" placeholder="Search checklist items…">
+ <select id="categoryFilter"><option value="all">All categories</option></select>
+ <div class="filters">
+  <button class="btn active" data-filter="all">All</button><button class="btn" data-filter="todo">To buy</button><button class="btn" data-filter="done">Purchased</button>
+ </div>
+</div>
+<section class="toolbar" id="authBar" style="justify-content:space-between"><div><strong id="accessLabel">Public checklist</strong><div id="syncStatus" style="font-size:11px;color:var(--muted)">Loading shared checklist…</div></div><button class="btn" id="loginToggle">Mommy Rox login</button></section>
+<section class="budget" id="ownerBudget" style="display:none">
+ <div><label for="budgetInput">BUDGET (₱)</label><input id="budgetInput" type="number" min="0" placeholder="e.g. 15000"></div>
+ <div><label for="spentInput">TOTAL SPENT (₱)</label><input id="spentInput" type="number" min="0" placeholder="Enter amount"></div>
+ <div><label>REMAINING</label><strong id="remaining">₱0.00</strong></div>
+</section>
+<section class="toolbar" id="ownerTools" style="display:none"><button class="btn primary" id="importStarter">Import starter checklist</button><button class="btn" id="logoutBtn">Log out</button></section>
+<section class="toolbar" id="loginPanel" style="display:none"><input id="ownerEmail" type="email" placeholder="Mommy Rox email" autocomplete="username"><input id="ownerPassword" type="password" placeholder="Password" autocomplete="current-password"><button class="btn primary" id="loginBtn">Log in</button></section>
+<main id="checklist"></main>
+<footer>Baby Ruru · A little love in every little detail ♡<br>Shared live checklist · Managed by Mommy Rox ♡</footer>
+</div>
+<script>
+const SUPABASE_URL = "https://ywagynzfjwendlgvdiuh.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_aIuuCCZ1LQ3UUzbfBoYLFQ_VCFONUOk";
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+const initial = [
+["Clothing & Essentials",["Newborn onesies","Pajamas / sleepsuits","Pants / shorts","Receiving blankets","Swaddles","Bibs","Going-home outfit","Newborn socks","Mittens","Bonnet"]],
+["Sleep & Nursery",["Baby mattress","Baby drawer","Crib","Fitted sheets","Waterproof mattress protector","Extra blanket"]],
+["Feeding",["Breast pump","Pigeon bottles","Philips bottles","Milk storage bags","Bottle storage bag","Bottle brush","Bottle sterilizer","Nursing pads","Burp cloths"]],
+["Diapering & Changing",["Newborn diapers","Baby wipes","Dry cotton wipes","Cotton balls","Ziplock bags","Changing mat","Diaper rash cream","Changing station organizer","Trolley basket","Baby caddy"]],
+["Bath & Baby Care",["Baby bathtub","Baby towels","Washcloths","Baby wash / shampoo","Baby lotion","Baby nail clipper","Baby brush and comb","Thermometer","Nasal aspirator","Baby-safe sanitizer"]],
+["Laundry & Cleaning",["Dishwashing liquid","Baby laundry detergent","Fabric conditioner"]],
+["Travel & Safety",["Stroller","Car seat","Tapo indoor CCTV"]],
+["Baby Hospital Bag",["Newborn clothes (2–3 sets)","Going-home outfit","Swaddle","Receiving blanket","Burp cloths","Newborn diapers","Baby wipes","Ziplock bags","Baby towel"]],
+["Mommy Hospital Bag",["Nursing bras","Maternity pads","Adult diapers","Postpartum underwear","Going-home outfit","Slippers","Toiletries","Breast pads","Phone charger","Hospital documents"]]
+];
+const purchased = new Set(["Newborn socks","Mittens","Bonnet","Baby mattress","Baby drawer","Breast pump","Pigeon bottles","Philips bottles","Milk storage bags","Bottle storage bag","Dishwashing liquid","Newborn diapers","Baby wipes","Dry cotton wipes","Cotton balls","Ziplock bags","Tapo indoor CCTV","Baby brush and comb","Baby laundry detergent","Fabric conditioner","Stroller","Car seat"]);
+const OWNER_UID = "1fdac996-ceab-4c46-8191-9a73a2c5c8b5";
+let data=[], filter="all", isOwner=false, busy=false;
+const $=id=>document.getElementById(id);
+function money(n){return "₱"+(Number(n)||0).toLocaleString("en-PH",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function statusText(s){return s==="purchased"?"Purchased":s==="ready"?"Ready":"To buy";}
+function setStatus(msg){$("syncStatus").textContent=msg;}
+function ownerUI(){
+ $("accessLabel").textContent=isOwner?"Mommy Rox · Owner mode":"Public checklist";
+ $("loginToggle").style.display=isOwner?"none":"inline-block";
+ $("ownerTools").style.display=isOwner?"flex":"none";
+ $("ownerBudget").style.display=isOwner?"grid":"none";
+ $("loginPanel").style.display="none";
+}
+async function loadItems(){
+ setStatus("Syncing latest checklist…");
+ // Public API requests only the columns granted to anonymous visitors.
+ const cols=isOwner?"id,category,name,price,product_url,status,display_order":"id,category,name,product_url,status,display_order";
+ const {data:rows,error}=await db.from("baby_items").select(cols).order("display_order").order("id");
+ if(error){setStatus("Could not load checklist: "+error.message);return;}
+ data=[];
+ (rows||[]).forEach(r=>{
+  let section=data.find(s=>s.category===r.category);
+  if(!section){section={category:r.category,items:[]};data.push(section);}
+  section.items.push({id:r.id,name:r.name,done:r.status==="purchased"||r.status==="ready",status:r.status,price:r.price??"",url:r.product_url||""});
+ });
+ setStatus("Live checklist · Updated from shared database");
+ render();
+ if(isOwner) await loadBudget();
+}
+async function loadBudget(){
+ const {data:rows,error}=await db.from("mommy_budget").select("id,budget").limit(1);
+ if(error){setStatus("Checklist synced; budget: "+error.message);return;}
+ const row=rows?.[0];
+ $("budgetInput").value=row?.budget??"";
+ $("spentInput").value="";
+ updateBudgetDisplay();
+}
+function render(){
+ const q=$("search").value.toLowerCase(),cat=$("categoryFilter").value,root=$("checklist");root.innerHTML="";
+ const cats=[...new Set(data.map(x=>x.category))],old=cat;
+ $("categoryFilter").innerHTML='<option value="all">All categories</option>'+cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+ $("categoryFilter").value=cats.includes(old)?old:"all";
+ let total=0,done=0;
+ data.forEach(section=>{
+  section.items.forEach(i=>{total++;if(i.done)done++;});
+  if($("categoryFilter").value!=="all"&&section.category!==$("categoryFilter").value)return;
+  const visible=section.items.filter(i=>(filter==="all"||(filter==="done"?i.done:!i.done))&&i.name.toLowerCase().includes(q));
+  if(!visible.length)return;
+  const el=document.createElement("section");el.className="section";
+  el.innerHTML=`<div class="section-head"><h2>${esc(section.category)}</h2><small>${section.items.filter(i=>i.done).length} / ${section.items.length} ready</small></div><div class="items"></div>${isOwner?'<div class="add-row"><input placeholder="Add an item…"><button class="btn primary">Add</button></div>':""}`;
+  const list=el.querySelector(".items");
+  visible.forEach(item=>{
+   const row=document.createElement("div");row.className="item"+(item.done?" done":"");
+   const check=isOwner?`<input type="checkbox" ${item.done?"checked":""} aria-label="Mark purchased">`:`<span aria-hidden="true" style="font-size:18px">${item.done?"✓":"○"}</span>`;
+   const editFields=isOwner?`<div class="item-fields"><input class="price" type="number" min="0" placeholder="₱ Private price" value="${esc(item.price)}"><input class="product-url" type="url" placeholder="Paste product reference link" value="${esc(item.url)}"></div><button class="btn deleteItem" style="margin-top:7px">Remove item</button>`:"";
+   row.innerHTML=`${check}<div><div class="item-name">${esc(item.name)}</div><small>${statusText(item.status|| (item.done?"purchased":"needed"))}</small>${editFields}<div class="ref-holder"></div></div>`;
+   if(isOwner){
+    row.querySelector('input[type=checkbox]').addEventListener("change",async e=>{await updateItem(item,{status:e.target.checked?"purchased":"needed"});});
+    row.querySelector(".price").addEventListener("change",e=>updateItem(item,{price:e.target.value===""?null:Number(e.target.value)}));
+    row.querySelector(".product-url").addEventListener("change",e=>updateItem(item,{product_url:e.target.value.trim()||null}));
+    row.querySelector(".deleteItem").addEventListener("click",async()=>{if(confirm("Remove this item?")){const {error}=await db.from("baby_items").delete().eq("id",item.id);if(error)setStatus(error.message);else await loadItems();}});
+   }
+   const holder=row.querySelector(".ref-holder");
+   if(item.url){try{const u=new URL(item.url);if(["https:","http:"].includes(u.protocol)){const a=document.createElement("a");a.className="ref-link";a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";a.textContent="↗ View product reference";holder.appendChild(a);}}catch(e){}}
+   list.appendChild(row);
+  });
+  if(isOwner){
+   const input=el.querySelector(".add-row input");
+   el.querySelector(".add-row button").addEventListener("click",()=>addItem(section,input.value));
+   input.addEventListener("keydown",e=>{if(e.key==="Enter")addItem(section,input.value);});
+  }
+  root.appendChild(el);
+ });
+ $("totalCount").textContent=total;$("doneCount").textContent=done;$("leftCount").textContent=total-done;
+ const pct=total?Math.round(done/total*100):0;$("percent").textContent=pct+"%";$("progress").style.width=pct+"%";
+ if(!root.children.length)root.innerHTML='<div class="empty">No items found. ♡</div>';
+}
+async function updateItem(item,patch){
+ const {error}=await db.from("baby_items").update(patch).eq("id",item.id);
+ if(error){setStatus("Update failed: "+error.message);return;}
+ await loadItems();
+}
+async function addItem(section,name){
+ name=name.trim();if(!name)return;
+ const {error}=await db.from("baby_items").insert({category:section.category,name,price:null,product_url:null,status:"needed",display_order:data.flatMap(s=>s.items).length+1});
+ if(error)setStatus("Could not add item: "+error.message);else await loadItems();
+}
+function updateBudgetDisplay(){
+ const budget=Number($("budgetInput").value)||0,spent=Number($("spentInput").value)||0;
+ $("remaining").textContent=money(budget-spent);
+}
+async function saveBudget(){
+ const value=Number($("budgetInput").value)||0;
+ const {data:rows,error:readErr}=await db.from("mommy_budget").select("id").limit(1);
+ if(readErr){setStatus(readErr.message);return;}
+ let result;
+ if(rows?.length)result=await db.from("mommy_budget").update({budget:value,updated_at:new Date().toISOString()}).eq("id",rows[0].id);
+ else result=await db.from("mommy_budget").insert({budget:value});
+ if(result.error)setStatus("Budget save failed: "+result.error.message);else setStatus("Private budget saved");
+}
+async function importStarter(){
+ if(!confirm("Import the starter checklist? This will add all default items to the shared list."))return;
+ const rows=[];
+ initial.forEach(([category,names])=>names.forEach((name,index)=>rows.push({category,name,status:purchased.has(name)?"purchased":"needed",display_order:rows.length+1})));
+ const {error}=await db.from("baby_items").insert(rows);
+ if(error)setStatus("Import failed: "+error.message);else{setStatus("Starter checklist imported");await loadItems();}
+}
+$("loginToggle").addEventListener("click",()=>$("loginPanel").style.display="flex");
+$("loginBtn").addEventListener("click",async()=>{
+ const email=$("ownerEmail").value.trim(),password=$("ownerPassword").value;
+ if(!email||!password){setStatus("Enter your owner email and password.");return;}
+ const {error}=await db.auth.signInWithPassword({email,password});
+ if(error){setStatus("Login failed: "+error.message);return;}
+ $("ownerPassword").value="";
+});
+$("logoutBtn").addEventListener("click",()=>db.auth.signOut());
+$("importStarter").addEventListener("click",importStarter);
+$("budgetInput").addEventListener("change",saveBudget);
+$("spentInput").addEventListener("input",updateBudgetDisplay);
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(x=>x.classList.toggle("active",x===b));render();}));
+$("search").addEventListener("input",render);$("categoryFilter").addEventListener("change",render);
+function updatePregnancy(){
+ const edd=new Date("2027-01-10T00:00:00");const today=new Date();today.setHours(0,0,0,0);
+ const daysToEdd=Math.ceil((edd-today)/86400000),gestationDays=280-daysToEdd;
+ const weeks=Math.floor(gestationDays/7),days=((gestationDays%7)+7)%7;
+ $("pregAge").textContent=weeks+" weeks + "+days+" days";
+ $("eddLabel").textContent=edd.toLocaleDateString("en-PH",{year:"numeric",month:"long",day:"numeric"});
+ const c=$("countdown");c.textContent=daysToEdd>=0?daysToEdd+" days to go ♡":Math.abs(daysToEdd)+" days past EDD";
+ $("pregProgress").style.width=Math.max(0,Math.min(100,gestationDays/280*100))+"%";
+}
+updatePregnancy();ownerUI();
+db.auth.onAuthStateChange(async(_event,session)=>{isOwner=session?.user?.id===OWNER_UID;ownerUI();await loadItems();});
+(async()=>{const {data:{session}}=await db.auth.getSession();isOwner=session?.user?.id===OWNER_UID;ownerUI();await loadItems();})();
+</script>
+</body></html>
